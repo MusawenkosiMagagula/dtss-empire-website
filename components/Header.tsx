@@ -86,6 +86,7 @@ export default function Header() {
           <nav className="hidden md:flex items-center space-x-8">
             <Link href="/" className="hover:text-gold transition-all duration-300 hover:scale-105">Home</Link>
             <Link href="/about" className="hover:text-gold transition-all duration-300 hover:scale-105">About</Link>
+            <Link href="/gallery" className="hover:text-gold transition-all duration-300 hover:scale-105">Gallery</Link>
             
             {/* APPLE-STYLE DESKTOP DROPDOWN */}
             <div className="relative" ref={dropdownRef}>
@@ -223,6 +224,15 @@ export default function Header() {
             >
               <div className="w-2 h-2 bg-gold rounded-full mr-3 opacity-0 group-hover/item:opacity-100 transition-opacity duration-300"></div>
               About
+            </Link>
+
+            <Link 
+              href="/gallery" 
+              className="flex items-center px-4 py-4 text-white/90 hover:text-gold hover:bg-white/10 rounded-xl transition-all duration-300 group/item"
+              onClick={closeMobileMenu}
+            >
+              <div className="w-2 h-2 bg-gold rounded-full mr-3 opacity-0 group-hover/item:opacity-100 transition-opacity duration-300"></div>
+              Gallery
             </Link>
             
             {/* APPLE-STYLE MOBILE DROPDOWN */}

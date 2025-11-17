@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 export default function About() {
   return (
     <section id="about" className="py-20 px-6 bg-black">
@@ -7,10 +9,15 @@ export default function About() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* About Image */}
           <div className="rounded-xl overflow-hidden border border-gold">
-            <div 
-              className="h-64 bg-cover bg-center"
-              style={{ backgroundImage: "url('/images/about-us.jpeg')" }}
-            ></div>
+            <div className="relative h-64">
+              <Image
+                src="/images/about-us.jpeg"
+                alt="About Us"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
+            </div>
           </div>
           
           {/* About Content */}

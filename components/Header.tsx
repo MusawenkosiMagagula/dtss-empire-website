@@ -68,7 +68,7 @@ export default function Header() {
           <div className="flex items-center space-x-4">
             <Link href="/" className="flex items-center space-x-4">
               <img 
-                src="/images/logo.png" 
+                src="/images/site-logo.png" 
                 alt="DTSS&DE Empire Logo"
                 className={`transition-all duration-500 ease-in-out ${
                   isScrolled ? 'h-12 w-12' : 'h-16 w-16'

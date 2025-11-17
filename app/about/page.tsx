@@ -79,7 +79,7 @@ export default function About() {
               <div className="relative">
                 <div className="bg-black border-2 border-gold rounded-2xl overflow-hidden shadow-2xl">
                   <img 
-                    src="/images/about-us-page.jpeg" 
+                    src="/images/About-us-page.jpeg" 
                     alt="Our Company"
                     className="w-full h-96 object-cover"
                   />

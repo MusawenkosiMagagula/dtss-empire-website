@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     siteName: 'DTSS&DE Empire',
     images: [
       {
-        url: '/images/og-image.jpg',
+        url: '/images/hero-bg.jpeg',
         width: 1200,
         height: 630,
         alt: 'DTSS&DE Empire - Your Trusted Business Partner in Hazyview',
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'DTSS&DE Empire - Security & Business Services',
     description: 'Comprehensive security, financial, transport, and catering services in Mpumalanga.',
-    images: ['/images/og-image.jpg'],
+    images: ['/images/hero-bg.jpeg'],
   },
   robots: {
     index: true,

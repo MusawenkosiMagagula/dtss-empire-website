@@ -26,11 +26,6 @@ const images = [
   'WhatsApp Image 2025-09-06 at 15.01.45 - Copy.jpeg',
 ]
 
-function captionFromFilename(name: string) {
-  // Remove extension and replace dashes/underscores with spaces
-  return name.replace(/\.[^.]+$/, '').replace(/[-_]+/g, ' ').replace(/\s+/g, ' ').trim()
-}
-
 export default function GalleryPage() {
   return (
     <>
@@ -46,12 +41,11 @@ export default function GalleryPage() {
                 <a href={`/images/${encodeURIComponent(img)}`} target="_blank" rel="noreferrer">
                   <img
                     src={`/images/${img}`}
-                    alt={captionFromFilename(img)}
+                    alt=""
                     className="w-full h-56 object-cover block"
                     loading="lazy"
                   />
                 </a>
-                <figcaption className="p-3 text-sm text-gray-300">{captionFromFilename(img)}</figcaption>
               </figure>
             ))}
           </div>
